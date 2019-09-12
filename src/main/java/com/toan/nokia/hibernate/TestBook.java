@@ -33,12 +33,7 @@ public class TestBook {
 
         bookService.delete(3);
 
-        Book bookId4 = bookService.findById(3);
-        if (null == bookID1) {
-            System.out.println("Book has id = " + id + " does not exists");
-        } else  {
-            System.out.println("Book info: " + bookID1);
-        }        bookId4.setDescription("update");
+        Book bookId4 = bookService.findById(4);
         bookId4.setPrice(98);
         bookId4.setTitle("wall");
         bookService.update(bookId4);
