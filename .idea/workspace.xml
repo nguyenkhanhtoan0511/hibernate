@@ -35,10 +35,36 @@
       <change afterPath="$USER_HOME$/Java/karaf_rest/rest-provider/src/main/resources/OSGI-INF/blueprint/rest.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Java/karaf_rest/rest-whiteboard/pom.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Java/karaf_rest/rest-whiteboard/src/main/java/com/java/examples/rest/whiteboard/BookingServiceRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/TestBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/TestBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/util/HibernateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/TestBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/dao/AuthorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/dao/AuthorDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/dao/BookDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/dao/BookDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/entity/Author.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/service/AuthorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/toan/nokia/hibernate/util/HibernateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$USER_HOME$/Java/.gitignore" beforeDir="false" afterPath="$USER_HOME$/Java/.gitignore" afterDir="false" />
       <change beforePath="$USER_HOME$/Java/pom.xml" beforeDir="false" afterPath="$USER_HOME$/Java/pom.xml" afterDir="false" />
     </list>
@@ -142,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="y" value="24" />
     <option name="width" value="1922" />
