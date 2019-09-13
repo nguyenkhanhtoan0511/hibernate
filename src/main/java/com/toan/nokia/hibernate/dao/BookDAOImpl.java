@@ -74,7 +74,6 @@ public class BookDAOImpl implements BookDAO {
     public void delete(long id) {
         try {
              Book book = (Book) getCurrentSession().load(Book.class, id);
-            // get o ngoai service trc, check co roi moi delete, ham delete o trong DAO chi co 1 chuc nang la delete thoi, ko co if else gi o day het
             getCurrentSession().delete(book);
         }catch (Throwable e){
             throw e;
@@ -93,13 +92,45 @@ public class BookDAOImpl implements BookDAO {
     }
 
     @Override
-    public void isActive(long id) {
+    public boolean checkActive(long id) {
         try {
-            Query query = getCurrentSession().createQuery("update Book set Book.isActive where id :=id");
+            Book book = (Book) getCurrentSession().get(Book.class, id);
+            return book.isActive();
+        }catch (Throwable e){
+            throw e;
+        }
+    }
+
+    @Override
+    public void unActive(long id) {
+        try{
+            Query query = getCurrentSession().createQuery("update Book b set b.is_active = :isActive where b.id = :id ");
             query.setParameter("id", id);
+            query.setParameter("isActive", false);
             query.executeUpdate();
         }catch (Throwable e){
             throw e;
         }
     }
+
+    @Override
+    public List<Book> listAllBookByAuthor(long authorId) {
+        try{
+            Query query = getCurrentSession().createQuery("from Book b where b.author_id = :authorID");
+            query.setParameter("authorID", authorId);
+            List<Book> books = query.list();
+            return books;
+        }catch(Throwable e){
+            throw e;
+        }
+    }
+
+//    try {
+//        Query query = getCurrentSession().createQuery("update Author a set a.isActive = :isActive where a.id = :id");
+//        query.setParameter("id", id);
+//        query.setParameter("isActive", false);
+//        query.executeUpdate();
+//    }catch (Throwable e){
+//        throw e;
+//    }
 }

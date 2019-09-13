@@ -14,12 +14,14 @@ public class AuthorDAOImpl implements AuthorDAO {
     public AuthorDAOImpl(){
     }
 
-    public Session getCurrentSession(){
+    public Session openCurrentSession(){
+        currentSession = HibernateUtil.getSessionFactory().openSession();
         return currentSession;
     }
 
-    public Session openCurrentSession(){
+    public Session openCurrentSessionwithTransaction(){
         currentSession = HibernateUtil.getSessionFactory().openSession();
+        currentSession.beginTransaction();
         return currentSession;
     }
 
@@ -27,69 +29,86 @@ public class AuthorDAOImpl implements AuthorDAO {
         currentSession.close();
     }
 
-    public Session openCurrentSessionwithTransaction(){
-        currentSession = HibernateUtil.getSessionFactory().openSession();
-        currentSession.getTransaction();
-        return currentSession;
-    }
-
     public void closeCurrentSessionwithTransaction(){
+        currentSession.getTransaction().commit();
         currentSession.close();
     }
 
-    public void setCurrentSession(Session currentSession) {
-        this.currentSession = currentSession;
+    public void setCurrentSession(Session session){
+        this.currentSession = session;
     }
 
-    public Author findById(long id) {
-        try {
-            Author author = (Author) getCurrentSession().get(Author.class, id);
-            return author;
-        }catch (Throwable e){
-            throw e;
-
-        }
+    public Session getCurrentSession(){
+        return currentSession;
     }
 
+    @Override
     public void add(Author author) {
         try {
             getCurrentSession().save(author);
-        }catch (Throwable e){
+        } catch (Throwable e) {
             throw e;
         }
     }
 
+    @Override
     public void update(Author author) {
         try {
             getCurrentSession().update(author);
-        }catch (Throwable e){
+        } catch (Throwable e) {
             throw e;
         }
     }
 
+    @Override
     public void delete(long id) {
-        try {
-            Author author = (Author) getCurrentSession().load(Author.class, id);
+        try{
+            Author author =(Author) getCurrentSession().get(Author.class, id);
             getCurrentSession().delete(author);
         }catch (Throwable e){
             throw e;
         }
     }
 
+    @Override
     public List<Author> listAll() {
-        try {
+        try{
             Query query = getCurrentSession().createQuery("from Author");
             List<Author> authors = query.list();
             return authors;
+        }catch (Exception e){
+            throw e;
+        }
+    }
+
+    @Override
+    public boolean checkActive(long id) {
+        try{
+            Author author = (Author) getCurrentSession().get(Author.class, id);
+            if(!author.isActive()){
+                return false;
+            }
+            return true;
         }catch (Throwable e){
+            throw e;
+        }
+    }
+
+    @Override
+    public Author findById(long id){
+        try {
+            Author author = (Author) getCurrentSession().get(Author.class, id);
+            return  author;
+        } catch (Throwable e) {
             throw e;
         }
     }
 
     public void unActive(long id) {
         try {
-            Query query = getCurrentSession().createQuery("update Author a set a.is_active='false' where a.id = :id");
+            Query query = getCurrentSession().createQuery("update Author a set a.is_active = :isActive where a.id = :id");
             query.setParameter("id", id);
+            query.setParameter("isActive", false);
             query.executeUpdate();
         }catch (Throwable e){
             throw e;

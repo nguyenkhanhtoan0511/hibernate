@@ -2,15 +2,19 @@ package com.toan.nokia.hibernate.entity;
 
 import org.hibernate.annotations.Type;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "Author")
@@ -31,14 +35,14 @@ public class Author {
     @Column(name = "id")
     private long id;
 
-    @Column(name = "firstName")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "last_name")
     private String lastName;
 
     @Type(type="yes_no")
-    @Column(name = "isActive")
+    @Column(name = "is_active")
     private boolean isActive;
 
     @Temporal(value = TemporalType.TIMESTAMP)
@@ -51,9 +55,12 @@ public class Author {
     @Column(name = "description")
     private String description;
 
+    @OneToMany(mappedBy = "Author", cascade = CascadeType.ALL)
+    private Set<Book> books;
+
     public Author(){}
 
-    public Author(String firstName, String lastName, boolean is_active, Date dob, String address, String description) {
+    public Author(String firstName, String lastName, Date dob, String address, String description) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.isActive = IS_ACTIVE;
@@ -70,35 +77,43 @@ public class Author {
         this.id = id;
     }
 
-    public String getFirst_name() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirst_name(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLast_name() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setLast_name(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public boolean isIs_active() {
+    public boolean isActive() {
         return isActive;
     }
 
-    public void setIs_active(boolean is_active) {
-        this.isActive = is_active;
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 
-    public Date getDate_of_birth() {
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
+
+    public Date getDob() {
         return dob;
     }
 
-    public void setDate_of_birth(Date dob) {
+    public void setDob(Date dob) {
         this.dob = dob;
     }
 
@@ -117,6 +132,7 @@ public class Author {
     public void setDescription(String description) {
         this.description = description;
     }
+
 
     @Override
     public String toString() {

@@ -16,5 +16,10 @@ public interface BookDAO {
 
     List<Book> listAll();
 
-    void isActive(long id);
+    boolean checkActive(long id);
+
+    void unActive(long id);
+
+
+    List<Book> listAllBookByAuthor(long authorId);
 }

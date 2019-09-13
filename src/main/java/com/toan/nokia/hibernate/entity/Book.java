@@ -5,8 +5,11 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -38,15 +41,19 @@ public class Book {
     private String description;
 
     @Temporal(value = TemporalType.TIMESTAMP)
-    @Column(name = "publicationDate")
+    @Column(name = "publication_date")
     private Date publicationDate;
 
     @Column(name = "price")
     private float price;
 
     @Type(type="yes_no")
-    @Column(name = "isActive")
+    @Column(name = "is_active")
     private boolean isActive;
+
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private Author author;
 
     public Book(){}
 
@@ -112,6 +119,14 @@ public class Book {
 
     public void setActive(boolean active) {
         isActive = active;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
     @Override
