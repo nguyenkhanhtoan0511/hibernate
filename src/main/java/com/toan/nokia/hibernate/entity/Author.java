@@ -55,7 +55,8 @@ public class Author {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "Author", cascade = CascadeType.ALL)
+    @OneToMany(cascade= CascadeType.ALL)
+    @JoinColumn(name="author_id")
     private Set<Book> books;
 
     public Author(){}

@@ -51,9 +51,9 @@ public class Book {
     @Column(name = "is_active")
     private boolean isActive;
 
-    @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Author author;
+//    @ManyToOne
+//    @JoinColumn(name = "student_id")
+//    private Author author;
 
     public Book(){}
 
@@ -121,13 +121,7 @@ public class Book {
         isActive = active;
     }
 
-    public Author getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
 
     @Override
     public String toString() {
