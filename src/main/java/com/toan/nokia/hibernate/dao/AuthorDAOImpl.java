@@ -104,9 +104,10 @@ public class AuthorDAOImpl implements AuthorDAO {
         }
     }
 
+    @Override
     public void unActive(long id) {
         try {
-            Query query = getCurrentSession().createQuery("update Author a set a.is_active = :isActive where a.id = :id");
+            Query query = getCurrentSession().createQuery("update Author a set a.isActive = :isActive where a.id = :id");
             query.setParameter("id", id);
             query.setParameter("isActive", false);
             query.executeUpdate();

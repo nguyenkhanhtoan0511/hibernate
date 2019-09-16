@@ -22,4 +22,6 @@ public interface BookDAO {
 
 
     List<Book> listAllBookByAuthor(long authorId);
+
+    void addBookwithAuthor(long authorId, Book book);
 }

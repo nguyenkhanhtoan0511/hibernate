@@ -1,5 +1,6 @@
 package com.toan.nokia.hibernate.dao;
 
+import com.toan.nokia.hibernate.entity.Author;
 import com.toan.nokia.hibernate.entity.Book;
 import com.toan.nokia.hibernate.util.HibernateUtil;
 import org.hibernate.Query;
@@ -104,7 +105,7 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public void unActive(long id) {
         try{
-            Query query = getCurrentSession().createQuery("update Book b set b.is_active = :isActive where b.id = :id ");
+            Query query = getCurrentSession().createQuery("update Book b set b.isActive = :isActive where b.id = :id ");
             query.setParameter("id", id);
             query.setParameter("isActive", false);
             query.executeUpdate();
@@ -116,21 +117,22 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public List<Book> listAllBookByAuthor(long authorId) {
         try{
-            Query query = getCurrentSession().createQuery("from Book b where b.author_id = :authorID");
-            query.setParameter("authorID", authorId);
-            List<Book> books = query.list();
-            return books;
+            Author author = (Author) getCurrentSession().get(Author.class, authorId);
+            return author.getBooks();
         }catch(Throwable e){
             throw e;
         }
     }
 
-//    try {
-//        Query query = getCurrentSession().createQuery("update Author a set a.isActive = :isActive where a.id = :id");
-//        query.setParameter("id", id);
-//        query.setParameter("isActive", false);
-//        query.executeUpdate();
-//    }catch (Throwable e){
-//        throw e;
-//    }
+    @Override
+    public void addBookwithAuthor(long authorId, Book book) {
+        try {
+            Author author = (Author) getCurrentSession().get(Author.class, authorId);
+            author.getBooks().add(book);
+            getCurrentSession().update(author);
+        }catch (Throwable e){
+            throw e;
+        }
+    }
+
 }

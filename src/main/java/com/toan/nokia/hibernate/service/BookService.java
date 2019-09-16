@@ -1,6 +1,5 @@
 package com.toan.nokia.hibernate.service;
 
-import com.toan.nokia.hibernate.entity.Author;
 import com.toan.nokia.hibernate.entity.Book;
 
 import java.util.List;
@@ -23,7 +22,6 @@ public interface BookService {
 
     List<Book> listAllBookByAuthor(long authorId);
 
-    void addBookwithAuthor(Author author, List<Book> books);
-
+    void addBookwithAuthor(long authorId, Book book);
 
 }

@@ -1,15 +1,11 @@
 package com.toan.nokia.hibernate.entity;
 
-
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -50,10 +46,6 @@ public class Book {
     @Type(type="yes_no")
     @Column(name = "is_active")
     private boolean isActive;
-
-//    @ManyToOne
-//    @JoinColumn(name = "student_id")
-//    private Author author;
 
     public Book(){}
 
@@ -120,8 +112,6 @@ public class Book {
     public void setActive(boolean active) {
         isActive = active;
     }
-
-
 
     @Override
     public String toString() {

@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class AuthorServiceImpl {
+public class AuthorServiceImpl implements AuthorService {
 
     private AuthorDAOImpl authorDAOImpl;
 
@@ -15,6 +15,7 @@ public class AuthorServiceImpl {
         this.authorDAOImpl = new AuthorDAOImpl();
     }
 
+    @Override
     public Author findById(long id){
         Author author = new Author();
         try{
@@ -28,6 +29,7 @@ public class AuthorServiceImpl {
         return author;
     }
 
+    @Override
     public void add(Author author){
         try{
             authorDAOImpl.openCurrentSessionwithTransaction();
@@ -39,6 +41,7 @@ public class AuthorServiceImpl {
         }
     }
 
+    @Override
     public void update(Author author){
         author.setDob(new Date());
         authorDAOImpl.openCurrentSessionwithTransaction();
@@ -46,6 +49,7 @@ public class AuthorServiceImpl {
         authorDAOImpl.closeCurrentSessionwithTransaction();
     }
 
+    @Override
     public void delete(long id){
         try{
             authorDAOImpl.openCurrentSessionwithTransaction();
@@ -61,9 +65,9 @@ public class AuthorServiceImpl {
 
             authorDAOImpl.closeCurrentSessionwithTransaction();
         }
-
     }
 
+    @Override
     public List<Author> listAll(){
         List<Author> authors = new LinkedList<>();
         try{
@@ -74,10 +78,10 @@ public class AuthorServiceImpl {
         }finally{
             authorDAOImpl.closeCurrentSession();
         }
-
         return authors;
     }
 
+    @Override
     public void unActive(long id){
         try{
             authorDAOImpl.openCurrentSessionwithTransaction();
@@ -93,6 +97,7 @@ public class AuthorServiceImpl {
         }
     }
 
+    @Override
     public boolean checkActive(long id){
         boolean check = false;
         try {
@@ -102,7 +107,6 @@ public class AuthorServiceImpl {
             }else{
                 throw new Exception(id + " does not exists");
             }
-
         }catch (Exception e){
             System.out.println("Error while check active id: "+ id + "." + e);
         }finally {
