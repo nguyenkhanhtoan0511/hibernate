@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f05a47e4-90dd-4c8f-b0ad-a9e08d3761a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestOneToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestOneToMany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/BookDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookServiceIMpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookServiceIMpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="f05a47e4-90dd-4c8f-b0ad-a9e08d3761a5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +10,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/entity/Book.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,23 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="36">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/dao/AuthorDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,12 +58,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookServiceIMpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2610">
+            <state relative-caret-position="577">
               <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
                 <element signature="e#409#410#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/util/HibernateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-53">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,7 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
@@ -224,50 +211,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
@@ -510,18 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/util/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/TestAuthor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -548,18 +479,6 @@
           <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookServiceIMpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,12 +553,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/util/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="-53">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/BookServiceIMpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,6 +584,23 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/toan/nokia/hibernate/service/AuthorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
